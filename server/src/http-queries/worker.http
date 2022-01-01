@@ -1,0 +1,35 @@
+POST http://localhost:5000/api/worker HTTP/1.1
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTExMjAyZTVmYmYyMDFlY2VjZmIwZiIsImlhdCI6MTYyMTE2ODcwNH0.DP2r0Ax4-ejM1b9IJcsf1-jIx8Tuxp9hdleaJ0pcyvA
+
+{
+    "worker":{
+        "firstName":"firstName",
+        "lastName":"lastName",
+        "gender":"man",
+        "contacts":"contacts",
+        "salary":10000,
+        "position":"position"
+    }
+}
+
+###
+GET http://localhost:5000/api/worker HTTP/1.1
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTExMjAyZTVmYmYyMDFlY2VjZmIwZiIsImlhdCI6MTYyMTE2ODcwNH0.DP2r0Ax4-ejM1b9IJcsf1-jIx8Tuxp9hdleaJ0pcyvA
+
+###
+PATCH http://localhost:5000/api/worker/60a12440c42eda2ed8a2b6db HTTP/1.1
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTExMjAyZTVmYmYyMDFlY2VjZmIwZiIsImlhdCI6MTYyMTE2ODcwNH0.DP2r0Ax4-ejM1b9IJcsf1-jIx8Tuxp9hdleaJ0pcyvA
+
+{
+    "position":"position123",
+    "salary":20000
+}
+###
+DELETE http://localhost:5000/api/worker/60a124e37d2a5b436c073802 HTTP/1.1
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYTExMjAyZTVmYmYyMDFlY2VjZmIwZiIsImlhdCI6MTYyMTE2ODcwNH0.DP2r0Ax4-ejM1b9IJcsf1-jIx8Tuxp9hdleaJ0pcyvA
+
+###

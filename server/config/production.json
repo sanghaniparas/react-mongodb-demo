@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "mongoURILocal": "mongodb://localhost:27017/workTest",
+    "secret":"verysecretkey"
+}
